@@ -65,4 +65,45 @@ print("Suma de listas", estudiantes + num)
 print(list("Python"))
 print(list(range(10)))
 print("\n")
-print(list("Benjamin"))
+
+#05- TUPLAS - (NO SON MUTABLES)
+grupo1 = ("Daniel" , "Cristian" , "Felipe" ,200,100, "Daniel")
+print(type(grupo1))
+
+#Accediendo al primer elemento de la tupla
+print(grupo1[0])
+
+#Consultando el elemento "Daniel" cuantas veces se encuentra en la tupla
+print("El elemento se repite", grupo1.count("Daniel"))
+
+#Muestra el indice del primer elemento buscado
+print("indice del elemento", grupo1.index ("Daniel"))
+
+#Reasignando el primer elemento de la tupla
+#grupo1[0] = "Conztanza"
+
+#Obteniendo un trozo de la tupla
+grupo2 = ("Pedro",100,"Diego",200,"Benjamin")
+print("Trozo de la tupla", grupo2[0:3])
+
+#Entonce como no puedo modificar una tupla, que puedo hacer?
+
+grupo1 = list(grupo1)
+print("La tupla ahora es de tipo:",type(grupo1),"\n")
+print("\n")
+
+#06- SETS (CONJUNTOS) - estructura fija
+conjunto_vacio = set()
+conjunto_vacio1 = {}
+print(type(conjunto_vacio1))
+conjunto_colores = ({"azul","rojo","verde"})
+conjunto_animales = ["gato","perro","loro"]
+
+print(type(conjunto_colores))
+print(type(conjunto_animales))
+print("El primer set contiene los siguientes colores", conjunto_colores)
+print("El segundo set contiene los siguientes animales", conjunto_animales)
+
+print(conjunto_animales[0])
+conjunto_colores.add("celeste")
+print("El set de colores lo conforman", conjunto_colores)
