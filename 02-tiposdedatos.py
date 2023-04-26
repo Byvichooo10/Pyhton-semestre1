@@ -4,12 +4,20 @@ peso = 60
 complejo = 1 +4j
 
 print("Impresion del numero complejo:",complejo)
+print(f"mi estatura es de {estatura} y mi peso es de {peso}")
+
+#TRANSFORMANDO DE REAL A ENTERO
+print(peso)
+print("Transformando un valor entero a real:",int(peso))
+
+#TRANSFORMANDO ENTERO A REAL
+print("transformando un valor entero a real:",float(peso))
 
 #OPERACION ARITMETICA BASICA
 imc = peso/estatura**2
 print("Mi imc es de:" ,imc)
 
-print("mi imc es de {:.2f}".format(imc))
+print("mi imc es de {:.2f}".format(imc)) #formatea el valor y lo puede hacer mas corto {:.2f} .format(imc)
 
 #02- DATOS DE TIPO DE CADENA
 asignatura = "Programacion" 
@@ -23,12 +31,21 @@ interruptor = True
 #CON TYPE SABEMOS EL TIPO DE DATOS QUE ESTAMOS TRATANDO
 print(type(ampolleta))
 
+#Podemos transformar cualquier valor booleano
+print(bool(0))
+print(bool(""))
+print(bool(None))
+print(bool("false"))
+print(bool(1))
+print("\n")
+
 #04- DATOS DE TIPOS ARRAY (OBJETOS DE TIPO COLECCION)
-estudiantes = ["Vicente", "Matias", "Carlos", "Andres"]
+estudiantes = ["Vicente", "Matias", "Carlos", "Andres", "Marcos"]
 print(estudiantes)
 num = [1,2,3,4,5,6,2]
 print(num)
 lenguaje = ["Pyhton"]
+print("\n")
 
 #DECLARANDO O INICIANDO LISTAS
 nueva_lista = list()
@@ -41,12 +58,14 @@ print(type(otra_lista))
 print("Lista de numeros:", num)
 print(len(num))
 print(num.count(2))
+print("\n")
 
 #Como accedo a un elemento en especifico de la lista?
 print(estudiantes[0]) #0 siempre es primer elemento de la lista
 print(estudiantes[1])
 print(estudiantes[3])
 print(estudiantes[-2]) #Se invierten posiciones
+print("\n")
 
 #Sobreescribir otro dato
 estudiantes[2] = "Benjamin"
@@ -64,6 +83,7 @@ print("Suma de listas", estudiantes + num)
 
 print(list("Python"))
 print(list(range(10)))
+print(list(range(10,25)))
 print("\n")
 
 #05- TUPLAS - (NO SON MUTABLES)
@@ -107,3 +127,35 @@ print("El segundo set contiene los siguientes animales", conjunto_animales)
 print(conjunto_animales[0])
 conjunto_colores.add("celeste")
 print("El set de colores lo conforman", conjunto_colores)
+
+#7 DICCIONARIOS
+
+diccionario1 = dict()
+diccionario2 = {}
+
+datos_personales = {
+    "Nombre":"Vicente",
+    "Institucion":"Ulagos",
+    "Edad" : 18,
+    "Asignaturas": {"Estructura de datos", "Programacion"}
+}
+
+print("Diccionario inicial:",datos_personales)
+
+#consulta cantidad de datos del diccionario
+print(len(datos_personales))
+
+#es facilmente accesible a los elementos dentro de un diccionario
+print(datos_personales["Institucion"])
+
+#¿Como actualizamos el valor de una clave dentro de un diccionario?
+datos_personales["Institucion"] = "USS"
+
+#como agregar
+datos_personales["Ciudad"] = "Osorno"
+print(datos_personales)
+
+
+#como eliminar
+del datos_personales["Ciudad"]
+print(datos_personales)
