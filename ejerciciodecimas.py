@@ -1,6 +1,6 @@
 #EJERCICIO DECIMAS PARCIAL 2
 
-estudiante = []
+estudiante = {}
 
 estudiante["nombre"] = input("Ingrese el nombre del estudiante")
 estudiante["asignatura"] = input("Ingrese el nombre de la asignatura")

@@ -19,3 +19,5 @@ paciente3 = (nombre3, edad3, estatura3, peso3)
 
 Datos =[(paciente1),(paciente2),(paciente3)]
 print(Datos)
+
+#ocupar el while

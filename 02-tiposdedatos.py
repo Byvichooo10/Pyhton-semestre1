@@ -142,20 +142,20 @@ datos_personales = {
 
 print("Diccionario inicial:",datos_personales)
 
-#consulta cantidad de datos del diccionario
+#Consulta cantidad de datos del diccionario
 print(len(datos_personales))
 
-#es facilmente accesible a los elementos dentro de un diccionario
+#Es facilmente accesible a los elementos dentro de un diccionario
 print(datos_personales["Institucion"])
 
 #¿Como actualizamos el valor de una clave dentro de un diccionario?
 datos_personales["Institucion"] = "USS"
 
-#como agregar
+#Como agregar nuevp valor de una clave
 datos_personales["Ciudad"] = "Osorno"
 print(datos_personales)
 
 
-#como eliminar
+#Como eliminar un valor de una clave
 del datos_personales["Ciudad"]
 print(datos_personales)
