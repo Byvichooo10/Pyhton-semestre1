@@ -1,2 +1,0 @@
-#EJERCICIOS 1 GUIA
-nu1 = 
