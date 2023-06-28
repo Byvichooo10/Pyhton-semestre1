@@ -1,4 +1,4 @@
-#EJERCICIO 3
+#EJERCICIO 3 GUIA
 
 a = float(input("Ingrese el lado a del triángulo"))
 b = float(input("Ingrese el lado b del triángulo"))

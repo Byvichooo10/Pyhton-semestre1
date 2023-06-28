@@ -1,4 +1,4 @@
-#EJERCICIO 2
+#EJERCICIO 2 GUIA
 
 palabra1 = input("Ingrese la primera palabra: ")
 palabra2 = input("Ingrese la segunda palabra: ")
